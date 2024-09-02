@@ -1,0 +1,109 @@
+.order-status {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.order-status h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.order-status div {
+    margin-bottom: 15px;
+}
+
+.order-status label {
+    display: inline-block;
+    width: 120px;
+    font-weight: bold;
+}
+
+.order-status select,
+.order-status input[type="number"] {
+    padding: 8px;
+    font-size: 14px;
+    width: calc(100% - 130px);
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.order-status button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.order-status button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.order-status .cards-container {
+    margin-top: 30px;
+}
+
+.order-status .order-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.order-status .order-card.selected {
+    border-color: #4CAF50;
+}
+
+.order-status .order-card p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.order-status .order-card strong {
+    font-weight: bold;
+}
+
+.order-status .order-card button {
+    margin-top: 10px;
+}
+
+.order-card.qianduanzuoye {
+    background-color: #e3feff; /* Light Blue */
+}
+
+.order-card.houduanzuoye {
+    background-color: #fff0f3; /* Light Pink */
+}
+
+/* Status Dot Styles */
+.status-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.status-dot.grey {
+    background-color: grey;
+}
+
+.status-dot.green {
+    background-color: green;
+    box-shadow: 0 0 8px green;
+}
+
+.status-dot.orange {
+    background-color: #FFAA33;
+}
+
+.status-dot.red {
+    background-color: red;
+}

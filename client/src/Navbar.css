@@ -1,0 +1,81 @@
+/* Navbar.css */
+
+.navbar {
+    background-color: #333; /* Keep the original color */
+    padding: 10px 20px;
+    position: relative;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.navbar-logo img {
+    width: 75px; /* Resize the logo */
+    height: auto;
+    filter: drop-shadow(1px 0.5px 0.3px white);
+    box-sizing: border-box;
+}
+
+.navbar-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #333; /* Keep the original color */
+    transform: translateX(-100%);
+    z-index: 1000;
+    padding-top: 60px; /* Avoid overlap with the logo */
+}
+
+.navbar-menu.open {
+    transform: translateX(0);
+}
+
+.navbar-menu li {
+    margin: 20px 0;
+}
+
+.navbar-menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+.navbar-menu li a:hover {
+    background-color: #575757;
+}
+
+@media (min-width: 701px) {
+    .navbar-menu {
+        flex-direction: row;
+        position: static;
+        transform: translateX(0);
+        height: auto;
+        width: auto;
+        padding-top: 0;
+        display: flex;
+    }
+
+    .navbar-menu li {
+        margin: 0 20px;
+    }
+}

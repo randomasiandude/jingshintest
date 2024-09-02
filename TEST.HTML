@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .tabs button {
+            padding: 10px;
+            cursor: pointer;
+        }
+        .tabs button.active {
+            background-color: #ccc;
+        }
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+    </style>
+    <title>Tabbed Interface</title>
+</head>
+<body>
+
+<div class="tabs">
+    <button class="tablinks" onclick="openTab(event, 'details')" id="defaultOpen">詳情</button>
+    <button class="tablinks" onclick="openTab(event, 'specs')">規格</button>
+    <button class="tablinks" onclick="openTab(event, 'return')">退換貨需知</button>
+    <button class="tablinks" onclick="openTab(event, 'related')">相關類別</button>
+</div>
+
+<div id="details" class="tab-content">
+    <h3>Details</h3>
+    <p>Details Content</p>
+</div>
+
+<div id="specs" class="tab-content">
+    <h3>Specs</h3>
+    <p>Specs Content</p>
+</div>
+
+<div id="return" class="tab-content">
+    <h3>Return Policy</h3>
+    <p>Return Policy Content</p>
+</div>
+
+<div id="related" class="tab-content">
+    <h3>Related Items</h3>
+    <p>Related Items Content</p>
+</div>
+
+<script>
+    function openTab(evt, tabName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tab-content");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+
+    // Open the default tab
+    document.getElementById("defaultOpen").click();
+</script>
+
+</body>
+</html>
+
+/*
+
+const addNewStage = () => {
+    axios.post('/api/stages', {
+        order_id: orderId,
+        order_type: orderType,
+        floor: floor,
+        stage: stage,
+        people_count: peopleCount,
+        production_quantity: productionQuantity,
+        person_in_charge: personInCharge,
+        start_time: null,
+        end_time: null,
+        total_working_time: null,
+    })
+        .then(response => {
+            console.log('Stage added successfully');
+            fetchStages(); // Refresh the stages list
+        })
+        .catch(error => {
+            console.error('Error adding stage:', error);
+        });
+}; */

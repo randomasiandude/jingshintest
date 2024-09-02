@@ -1,0 +1,93 @@
+/* Form.css */
+
+/* Form.css */
+
+.form-container {
+    padding: 20px;
+    background-color: #ffffff; /* Pure white background for a clean look */
+    max-width: 400px; /* Reduce width for a more compact design */
+    margin: auto;
+    border-radius: 0; /* Increase border-radius for a softer edge */
+    box-shadow: none;
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Use a modern sans-serif font */
+}
+
+.form-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: 600;
+    text-align: center; /* Center align the title */
+}
+
+.form-container p {
+    margin: 12px 0;
+    font-size: 14px;
+    color: #555; /* Slightly lighter text color for secondary information */
+    line-height: 1.6;
+}
+
+.form-container p strong {
+    color: #000; /* Darker color for the labels */
+    font-weight: 600; /* Slightly bolder for emphasis */
+}
+
+.form-container .highlight {
+    color: #007bff; /* Optional: Use a color highlight for important text */
+}
+
+.tabs {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    flex: 1;
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+
+.tab-button.active {
+    background-color: #007bff;
+    color: white;
+}
+
+.tab-content {
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Status Dot Styles */
+.status-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.status-dot.grey {
+    background-color: grey;
+}
+
+.status-dot.green {
+    background-color: green;
+    box-shadow: 0 0 8px green;
+}
+
+.status-dot.orange {
+    background-color: #FFAA33;
+}
+
+.status-dot.red {
+    background-color: red;
+}

@@ -1,0 +1,172 @@
+/* Scoped Login Page Styles */
+.login-page-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, rgb(233,232,228),rgb(244,243,236));
+}
+
+.login-page {
+    width: 350px;
+    height: 700px;
+    border-radius: 40px;
+    background-color: #fefdf9;
+    overflow: hidden;
+    box-shadow: 0px 20px 50px 0px rgba(0,0,0,0.2);
+    padding: 10px;
+    position: relative;
+}
+
+
+h1 {
+    font-weight: 900;
+    font-size: 2em;
+    color: #42484f;
+    margin-top: 80px;
+    z-index: 1;
+    position: relative;
+}
+
+form {
+    margin-top: 10px;
+    z-index: none;
+    position: relative;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 1em;
+    color: #42484f;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid lightgray;
+    background: transparent;
+    outline: none;
+    margin-bottom: 40px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.1em;  /* Increased font size */
+}
+
+button {
+    width: 80px;
+    height: 38px;
+    border-radius: 8%;
+    background: #54576d ;
+    color: rgb(226, 226, 226);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px ;
+    border: none;
+    margin: 4px 2px;
+    cursor: pointer; 
+    z-index: 1;
+    position: relative;
+}
+
+button:hover {
+    background: linear-gradient(to top right, #090b0e,#13191f);
+}
+
+.login-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    z-index: 1;
+    position: relative;
+}
+
+.login-links a {
+    text-decoration: underline;
+    font-weight: 900;
+    font-size: 0.8em;
+    color: #42484f;
+    cursor: pointer;
+}
+
+/* Dropdown container */
+.custom-dropdown {
+    position: relative;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.custom-dropdown select {
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid lightgray;
+    background-color: #fefdf9;
+    outline: none;
+    cursor: pointer;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1em;
+    color: #42484f;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.custom-dropdown select:focus {
+    border-bottom: 1px solid #8d8d8d;
+}
+
+.custom-dropdown::after {
+    content: '\25BC'; /* Down arrow */
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    font-size: 0.8em;
+    color: #42484f;
+    pointer-events: none;
+}
+
+/* Dropdown options */
+.custom-dropdown select option {
+    padding: 10px;
+    background-color: #fff;
+    color: #42484f;
+}
+
+.custom-dropdown select option:hover {
+    background-color: #f1f1f1;
+}
+
+.custom-dropdown select option:checked {
+    background-color: #e7e7e7;
+}
+
+/* Style the list of options */
+.custom-dropdown-options {
+    border-radius: 8px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fefdf9;
+    margin-top: 5px;
+}
+
+.custom-dropdown-options option {
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    background-color: #fefdf9;
+}
+
+.custom-dropdown-options option:hover {
+    background-color: #f1f1f1;
+}
+
+.custom-dropdown-options option:last-child {
+    border-bottom: none;
+}
